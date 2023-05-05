@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Peace</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+    />
+    <link href="./styleInpLog.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="formInput">
+    <form method="POST" action="login" id="add-form">
+      <div class="regList">
+        <label class="regListLog">
+          <span id="login">Введите логин:</span><br>
+          <input
+            id="myLog"
+            class="form-input"
+            type="login"
+            name="login"
+            placeholder="Please enter log in"
+          />
+        </label>
+        <div id="LogError"></div>
+        <label class="regListEmail">
+          <span id="email">Введите почту:</span>
+          <input
+            id="myEmail"
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="Please enter your e-mail"
+          />
+        </label>
+        <label class="regListPass">
+          <span id="pass">Введите пароль:</span>
+          <input
+            id="myPass"
+            class="form-input"
+            type="password"
+            name="password"
+            placeholder="Please enter your password"
+          />
+        </label>
+        <label class="regListPassRepeat">
+          <span id="repPass">Повторите пароль:</span>
+          <input
+            id="repeatpass"
+            class="form-input"
+            type="password"
+            name="password"
+            placeholder="Please repeat your password"
+          />
+        </label>
+        <label class="regListLanguage">
+          <span id="ChangeLang">Выберите язык</span><br>
+          <select id="Lang">
+            <option>Русский</option>
+            <option selected>English</option>
+          </select>
+        </label>
+        <button id="btn" type="button" class="regListEnter" onclick="getInputValue();">
+          Войти
+        </button>
+        <form class="btn_back">
+          <input type="button" onclick="window.location.href = './portfolio.html';" value="Вернуться к Portfolio"/>
+        </form>
+      </div>
+
+      <div class="result">
+          <p id="logMyLog">Логин:</p>
+          <p id="logMyEmail">Почта:</p>
+          <p id="logMyPass">Пароль:</p>
+          <p id="logMyRepPass">Повтор пароля:</p>
+          <p id="logLang">Язык:</p>
+          <input type="checkbox" class="custom-checkbox" id="good" name="good">
+          <label id="checkbox" for="good">все введенные поля выведены для просмотра?<br>
+            (нажать на квадратик в случае успеха)</label>
+        </div>
+
+    </div>
+    </form>
+
+    <script src="./scriptInpLog.js"></script>
+    <script src="https://unpkg.com/i18next@22.4.9/dist/umd/i18next.min.js"></script>
+    <script type="module" src="./language.js"></script>
+  </body>
+</html>

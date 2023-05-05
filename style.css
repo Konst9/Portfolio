@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: black;
+}
+
+#header {
+    height: 106px;
+}
+img.logo {
+    margin-top: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+    float: left;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a.home {
+    margin-top: 45px;
+    float:left;
+    width: 8%;
+}
+a.aboutMe {
+    margin-top: 45px;
+    float: left;
+    width: 10%;
+}
+a.resume {
+    margin-top: 45px;
+    float: left;
+    width: 8%;
+}
+a.portfolio {
+    margin-top: 45px;
+    float: left;
+    width: 10%;
+}
+@media (max-width: 800px) {
+    a.home {
+        width: 16%;
+    }
+    a.aboutMe {
+        width: 18%;
+    }
+    a.resume {
+        width: 16%;
+    }
+    a.portfolio {
+        width: 18%;
+    }
+}
+#Iam {
+    margin-top: 121px;
+    margin-left: 118px;
+}
+h1 {
+    color: white;
+    font-size: 84px;
+}
+p {
+    color:white;
+    font-size: 18px;
+}
+#aboutIam {
+    margin-left: 186px;
+    margin-top: 53px;
+    height: 75px;
+    width: 420px;
+}
+.Me {
+    float: left;
+    width: 50%;
+}
+.My_foto {
+    float: right;
+    width: 50%;
+}
+.text {
+    width: 70vw;
+    margin-top: 8vw;
+    margin-left: 15vw;
+}
+
+.stroke {
+    margin-top: 5vw;
+    width: 100%;
+}
+.resume {
+    margin-top: 20px;
+}
+h1.TK {
+    font-size: 84px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: lighter;
+    color: rgb(219,255,0);
+
+}
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: lighter;
+    color: rgb(219,255,0);
+
+}
+p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: lighter;
+}
+.pictures {
+    float: left;
+    width: 32%;
+    height: 40vw;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_enter {
+    float: left;
+    width: 32%;
+    height: 40vw;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer {
+    float: left;
+    width: 32%;
+    height: 40vw;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.example_text {
+    text-align: center;
+    font-size: 44px;
+}
+@media (max-width: 800px) {
+    .pictures { 
+        width: 45%;
+    }
+    .input_enter {
+        width: 45%;
+    }
+    .timer {
+        width: 91.5%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .example_text {
+        font-size: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .pictures { 
+        width: 95%;
+    }
+    .input_enter {
+        width: 95%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .timer {
+        width: 95%;
+    }
+    .example_text {
+        font-size: 20px;
+    }
+}
+@font-face {
+    font-family: "Lato";
+    src: url("./fonts/Lato-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
